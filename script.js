@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {nombre:'Gestor De Alumnos y Cursos', imagen:'./assets/img/users-students.png', tecnologias: ["html", "css","typescript","angular"], repositorio:'https://github.com/Franco-serra/angular-coder-entrega-final'}
   ];
 
+
   projects.forEach(p => {
     const card = document.createElement('div');
     card.className = "swiper-slide";
