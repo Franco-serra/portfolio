@@ -17,6 +17,7 @@ body.dark-mode {
   color: #ffffff;
 }
 
+
 #modo-btn {
   background-color: var(--btn-bg);
   color: var(--btn-icon);
@@ -233,7 +234,7 @@ main {
   transition: transform 0.2s;
 }
 
-.fa-github:hover{
+.skills-list li i .fa-github:hover{
   transform: scale(2);
 }
 
@@ -241,8 +242,17 @@ main {
   color: black;
 }
 
+
 body.dark-mode .fa-github{
   color: #ffffff;
+}
+
+.skills-list li .ts-icon {
+  transition: transform 0.2s;
+}
+
+.ts-icon:hover {
+  transform: scale(2);
 }
 
 .html-icon {
