@@ -17,7 +17,6 @@ body.dark-mode {
   color: #ffffff;
 }
 
-
 #modo-btn {
   background-color: var(--btn-bg);
   color: var(--btn-icon);
