@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let body = document.body;
 
   let projects = [
-    {nombre: 'Shopping', imagen: './assets/img/shopping-1.png', tecnologias: ["html", "css", "js"]},
-    {nombre: 'Shopping', imagen: './assets/img/shopping-2.png', tecnologias: ["html", "css", "js"]},
-    {nombre: 'Shopping', imagen: './assets/img/shopping-3.png', tecnologias: ["html", "css", "js"]},
+    {nombre: 'e-commerce', imagen: './assets/img/shopping-1.png', tecnologias: ["html", "css", "js"],repositorio:"https://franco-serra.github.io/entrega3-Serra/"},
+    {nombre: 'e-commerce', imagen: './assets/img/shopping-2.png', tecnologias: ["html", "css", "js"],repositorio:"https://franco-serra.github.io/entrega3-Serra/"},
+    {nombre: 'e-commerce', imagen: './assets/img/shopping-3.png', tecnologias: ["html", "css", "js"],repositorio:"https://franco-serra.github.io/entrega3-Serra/"},
     {nombre:'Gestor De Alumnos y Cursos', imagen:'./assets/img/login-students.png', tecnologias: ["html", "css","typescript","angular"],repositorio:'https://github.com/Franco-serra/angular-coder-entrega-final'},
     {nombre:'Gestor De Alumnos y Cursos', imagen:'./assets/img/dashboard-students.png', tecnologias: ["html", "css","typescript","angular"],repositorio:'https://github.com/Franco-serra/angular-coder-entrega-final'},
     {nombre:'Gestor De Alumnos y Cursos', imagen:'./assets/img/students-students.png', tecnologias: ["html", "css","typescript","angular"],repositorio:'https://github.com/Franco-serra/angular-coder-entrega-final'},
