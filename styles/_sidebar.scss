@@ -1,0 +1,71 @@
+@use './variables' as *;
+
+#menu-toggle {
+    color: $secondary-color;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: $project-bg;
+    color: $secondary-color;
+    padding-top: 80px;
+    transition: left $transition-time ease;
+    z-index: 1000;
+    opacity: 0.9;
+
+    &.active {
+        left: 0;
+    }
+}
+
+.sidebar-container {
+    li {
+        margin: 1.5rem 0;
+        text-align: center;
+
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 2.9px;
+
+    &.active {
+        .barra:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .barra:nth-child(2) {
+            transform: rotate(90deg) translate(0px, 0px);
+        }
+
+        .barra:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    }
+}
+
+.barra {
+    width: 30px;
+    height: 4px;
+    background-color: $secondary-color;
+    transition: all $transition-time ease;
+}

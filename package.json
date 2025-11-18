@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "sass:watch": "sass styles/main.scss styles.css --watch",
+    "sass:build": "sass styles/main.scss styles.css",
+    "sass:build-prod": "sass styles/main.scss styles.css --style=compressed",
+    "build": "npm run sass:build-prod",
+    "dev": "npm run sass:watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franco-serra/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franco-serra/portfolio/issues"
+  },
+  "homepage": "https://github.com/Franco-serra/portfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.94.1"
+  }
+}

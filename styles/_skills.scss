@@ -1,0 +1,108 @@
+@use './variables' as *;
+
+.skill-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    li {
+        font-size: $skill-icon-size;
+    }
+}
+
+.skills-list {
+    i {
+        padding: 8px;
+        font-size: 32px;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(2);
+        }
+    }
+
+    li img {
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(2);
+        }
+    }
+
+    .fa-github {
+        color: $primary-color;
+        font-size: 30px;
+    }
+
+    // Skill icons colors
+    .html-icon {
+        color: $html-color;
+    }
+
+    .css-icon {
+        color: $css-color;
+    }
+
+    .sass-icon {
+        color: $sass-color;
+    }
+
+    .bootstrap-icon {
+        color: $bootstrap-color;
+    }
+
+    .js-icon {
+        color: $js-color;
+    }
+
+    .ts-icon {
+        color: $ts-color;
+
+        &:hover {
+            font-size: 50px;
+        }
+    }
+
+    .fa-node-js {
+        color: $node-color;
+    }
+
+    .angular-icon {
+        color: $angular-color;
+        font-size: 35px;
+    }
+
+    .python-icon {
+        color: $python-color;
+    }
+
+    .git-icon {
+        color: $git-color;
+    }
+}
+
+.mongo-db {
+    width: 50px;
+    height: 50px;
+}
+
+.express {
+    width: 30px;
+    height: 30px;
+}
+
+.fa-linkedin {
+    font-size: 30px;
+}
+

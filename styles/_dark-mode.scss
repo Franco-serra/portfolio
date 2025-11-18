@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+body.dark-mode {
+    background-color: $dark-bg;
+    color: $dark-text;
+
+    .section-skills h2 {
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+
+    .fa-github {
+        color: $dark-text;
+    }
+}
+
+body .section-skills h2 {
+    color: $primary-color;
+    transition: background-color $transition-time, color $transition-time;
+}
