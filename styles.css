@@ -182,12 +182,6 @@ main {
 .skills-list i:hover {
   transform: scale(2);
 }
-.skills-list li img {
-  transition: transform 0.2s;
-}
-.skills-list li img:hover {
-  transform: scale(2);
-}
 .skills-list .fa-github {
   color: #000000;
   font-size: 30px;
@@ -207,11 +201,13 @@ main {
 .skills-list .js-icon {
   color: #f0db4f;
 }
-.skills-list .ts-icon {
-  color: #3178C6;
+.skills-list .devicon-typescript-plain {
+  color: #3178c6;
+  display: inline-block;
+  transition: transform 0.2s;
 }
-.skills-list .ts-icon:hover {
-  font-size: 50px;
+.skills-list .devicon-typescript-plain:hover {
+  transform: scale(2);
 }
 .skills-list .fa-node-js {
   color: #68a063;
@@ -226,18 +222,15 @@ main {
 .skills-list .git-icon {
   color: #f1502f;
 }
-
-.mongo-db {
+.skills-list .mongo-db {
   width: 50px;
   height: 50px;
 }
-
-.express {
+.skills-list .express {
   width: 30px;
   height: 30px;
 }
-
-.fa-linkedin {
+.skills-list .fa-linkedin {
   font-size: 30px;
 }
 

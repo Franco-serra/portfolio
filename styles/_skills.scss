@@ -21,18 +21,11 @@
     }
 }
 
+
 .skills-list {
     i {
         padding: 8px;
         font-size: 32px;
-        transition: transform 0.2s;
-
-        &:hover {
-            transform: scale(2);
-        }
-    }
-
-    li img {
         transition: transform 0.2s;
 
         &:hover {
@@ -66,13 +59,15 @@
         color: $js-color;
     }
 
-    .ts-icon {
-        color: $ts-color;
-
-        &:hover {
-            font-size: 50px;
-        }
+.devicon-typescript-plain {
+    color: #3178c6;
+    display: inline-block;
+    transition: transform 0.2s;
+    
+    &:hover {
+        transform: scale(2);
     }
+}
 
     .fa-node-js {
         color: $node-color;
@@ -90,7 +85,7 @@
     .git-icon {
         color: $git-color;
     }
-}
+
 
 .mongo-db {
     width: 50px;
@@ -106,3 +101,4 @@
     font-size: 30px;
 }
 
+}
