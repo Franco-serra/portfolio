@@ -10,7 +10,7 @@
 body {
   background-color: #ffffff;
   color: #000000;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 header {
@@ -46,7 +46,7 @@ header img {
   padding: 10px;
   cursor: pointer;
   font-size: 20px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 #menu-toggle {
@@ -66,7 +66,7 @@ header img {
   background: #333;
   color: #ffffff;
   padding-top: 80px;
-  transition: left 0.3s ease;
+  transition: left 0.2s ease;
   z-index: 1000;
   opacity: 0.9;
 }
@@ -107,7 +107,7 @@ header img {
   width: 30px;
   height: 4px;
   background-color: #ffffff;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 main {
@@ -153,6 +153,26 @@ main {
 .section-projects h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #ffffff;
+}
+body.dark-mode .section-skills h2 {
+  background-color: #222;
+  color: #ffffff;
+}
+body.dark-mode .fa-github {
+  color: #ffffff;
+}
+body.dark-mode .devicon-express-original {
+  color: #ffffff;
+}
+
+body .section-skills h2 {
+  color: #000000;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .skill-block {
@@ -212,6 +232,19 @@ main {
 .skills-list .fa-node-js {
   color: #68a063;
 }
+.skills-list .devicon-express-original {
+  color: #000;
+  font-size: 35px;
+  display: inline-block;
+  transition: 0.2s;
+}
+.skills-list .devicon-express-original:hover {
+  transform: scale(2);
+}
+.skills-list .fa-envira {
+  color: #47A248;
+  font-size: 35px;
+}
 .skills-list .angular-icon {
   color: #dd1b16;
   font-size: 35px;
@@ -222,13 +255,29 @@ main {
 .skills-list .git-icon {
   color: #f1502f;
 }
-.skills-list .mongo-db {
-  width: 50px;
-  height: 50px;
+.skills-list .devicon-vscode-plain {
+  color: #007ACC;
+  display: inline-block;
+  transition: transform 0.2s;
 }
-.skills-list .express {
-  width: 30px;
-  height: 30px;
+.skills-list .devicon-vscode-plain:hover {
+  transform: scale(2);
+}
+.skills-list .devicon-mysql-plain {
+  color: #4479A1;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.skills-list .devicon-mysql-plain:hover {
+  transform: scale(2);
+}
+.skills-list .devicon-postman-plain {
+  color: #FF6C37;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.skills-list .devicon-postman-plain:hover {
+  transform: scale(2);
 }
 .skills-list .fa-linkedin {
   font-size: 30px;
@@ -403,23 +452,6 @@ main {
     gap: 0.8rem;
   }
 }
-body.dark-mode {
-  background-color: #222;
-  color: #ffffff;
-}
-body.dark-mode .section-skills h2 {
-  background-color: #222;
-  color: #ffffff;
-}
-body.dark-mode .fa-github {
-  color: #ffffff;
-}
-
-body .section-skills h2 {
-  color: #000000;
-  transition: background-color 0.3s, color 0.3s;
-}
-
 .social-buttons {
   display: flex;
   justify-content: center;
