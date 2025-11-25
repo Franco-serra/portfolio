@@ -1,12 +1,74 @@
 @use './variables' as *;
 @use './dark-mode' as *;
 
+.title-skills {
+    width: 100%;
+    text-align: center;
+}
+
+.skills-titulo {
+    background: linear-gradient(135deg, #FF1A00 0%, #FFE600 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    font-size: 2.5rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill-card {
+    width: 300px; 
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.light-mode {
+    .skill-card {
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        
+        &:hover {
+            border-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
 
 .skill-block {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 100%;
+
+    h2 {
+        color: white;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        background: linear-gradient(135deg, #FF0000 0%, #FFD700 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     ul {
         list-style: none;
@@ -20,10 +82,25 @@
 
     li {
         font-size: $skill-icon-size;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        
+        span {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        &:hover span {
+            opacity: 1;
+        }
     }
 }
 
-
+// Manteniendo todos tus estilos de íconos originales
 .skills-list {
     i {
         padding: 8px;
@@ -40,7 +117,6 @@
         font-size: 30px;
     }
 
-    // Skill icons colors
     .html-icon {
         color: $html-color;
     }
@@ -73,7 +149,6 @@
 
     .fa-node-js {
         color: $node-color;
-
     }
 
     .devicon-express-original {
@@ -138,5 +213,4 @@
     .fa-linkedin {
         font-size: 30px;
     }
-
 }

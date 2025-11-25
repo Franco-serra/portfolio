@@ -36,3 +36,15 @@ header {
     font-size: 20px;
     transition: background-color $transition-time, color $transition-time;
 }
+
+.logo {
+    margin-left: 43px;
+    background: linear-gradient(135deg, #FF1A00 0%, #FFE600 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    font-size: 1.5rem;
+}

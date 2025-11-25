@@ -8,7 +8,7 @@
     font-family: sans-serif;
 }
 
-body {
+body.light-mode {
     background-color: $secondary-color;
     color: $primary-color;
     transition: background-color $transition-time, color $transition-time;

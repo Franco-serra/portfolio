@@ -1,11 +1,12 @@
 @use './variables' as *;
 
+
 .social-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  margin: 2rem 0;
+  
   
   a {
     display: flex;
@@ -76,9 +77,8 @@
   i {
     color: white;
   }
-}
+} 
 
-// Versión alternativa más minimalista
 .social-buttons.minimal {
   a {
     background: transparent;

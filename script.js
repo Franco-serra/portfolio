@@ -104,13 +104,23 @@ card.innerHTML = `
     });
   });
 
-  if (localStorage.getItem('modo') === 'oscuro') {
+if (localStorage.getItem('modo') === 'oscuro') {
     body.classList.add('dark-mode');
-  }
+    body.classList.remove('light-mode');
+} else {
+    body.classList.add('light-mode');
+    body.classList.remove('dark-mode');
+}
 
-  boton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    let modo = body.classList.contains('dark-mode') ? 'oscuro' : 'claro';
-    localStorage.setItem('modo', modo);
-  });
+boton.addEventListener('click', () => {
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('modo', 'claro');
+    } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('modo', 'oscuro');
+    }
+});
 });
